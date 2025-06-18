@@ -1,0 +1,873 @@
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+.logo {
+    width: 60px;
+    height: 35px;
+
+}
+
+.navbar {
+    width: 100%;
+    background-color: white;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* .nav-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+} */
+
+.nav-right .a {
+    margin: 0px 20px 0px 0px;
+    font-size: 18px;
+    letter-spacing: 1.5px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    border: none;
+    padding: 8px 20px;
+    text-align: center;
+    font-size: 18px;
+    border-radius: 10px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    letter-spacing: 1px;
+}
+
+.nav-btn {
+    border: none;
+    border-radius: 18px;
+    padding: 10px;
+    letter-spacing: 1px;
+    font-size: 15px;
+    background-color: rgb(51, 51, 233);
+    color: white;
+    transition: all 0.5s ease;
+}
+
+/* -------------------------- Image contents -------------------------------- */
+.imgcont {
+    height: 85vh;
+    overflow-x: hidden;
+    color: white;
+    display: flex;
+    position: relative;
+}
+
+/* https://www.figma.com/design/bgbn8Wl0gsU9h3TPaNopJ9/Sri-Veda-Multispecialty-Hospital-webpage-design?node-id=0-1&t=AdbuauAedbV7260s-1  */
+
+.imgcont h1 {
+    font-size: 60px;
+    width: 10%;
+    letter-spacing: 1.5px;
+    margin: 0px 0px 30px 0px;
+}
+
+.imgcont .firstimg {
+    filter: brightness(45%);
+    width: 100%;
+}
+
+.imgconts {
+    position: absolute;
+    display: flex;
+    width: 100%;
+    letter-spacing: 0.7px;
+    font-family: serif;
+    height: 100%;
+}
+
+.imgconts .fdiv {
+    width: 60%;
+    margin: 60px 0px 0px 100px;
+}
+
+.imgconts img {
+    width: 30%;
+    margin: 60px 40px 0px 0px;
+    height: 400px;
+}
+
+.ficon {
+    width: 25%;
+    text-align: center;
+}
+
+.ficon .heart {
+    font-size: 20px;
+    background-color: green;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    padding: 12px;
+    margin-bottom: 5px;
+}
+
+.heartcont {
+    display: flex;
+    justify-content: center;
+    font-size: 15px;
+}
+
+.fa-circle {
+    font-size: 5px;
+    margin: 7px 7px 0px 10px;
+}
+
+.img-cont-icons {
+    display: flex;
+}
+
+/*  ---------------- image content buttons ---------------- */
+
+.btn {
+    border: none;
+    border-radius: 15px;
+    padding: 8px 10px;
+    box-shadow: 1px 1px 10px black;
+    margin: 40px 0px 0px 20px;
+    background-color: aliceblue;
+    color: black;
+    font-size: 17px;
+    letter-spacing: 0.7px;
+}
+
+.btn1 {
+    background-color: green;
+    color: white;
+}
+
+/* ============== Hover Efforts =============== */
+
+.a:hover {
+    color: white;
+    background-color: blue;
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+.nav-btn:hover {
+    cursor: pointer;
+    transform: scaleX(1.1);
+}
+
+
+
+.btn1:hover,
+.btn2:hover {
+    background-color: rgb(0, 13, 128);
+    color: white;
+    cursor: pointer;
+}
+
+#lab {
+    display: none;
+}
+
+#lab i {
+    padding: 0px 5px 0px 0px;
+    font-size: 30px;
+}
+
+
+.active {
+    background-color: black;
+    color: white;
+}
+
+
+
+/* ================= Responsive ================== */
+
+@media only screen and (min-width:300px) and (max-width:800px) {
+    .imgcont h1 {
+        font-size: 30px;
+        width: unset;
+    }
+
+    .imgconts .fdiv {
+        width: 100%;
+        height: 100%;
+        padding: 50px 0px 0px 0px;
+        margin: 0px 0px 0px 0px;
+        text-align: center;
+    }
+
+    .imgconts img {
+        width: unset;
+        height: unset;
+        position: fixed;
+        opacity: 0;
+    }
+
+    .nav-right {
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        z-index: 999;
+        top: 70px;
+        left: 100%;
+        height: 300px;
+        width: 250px;
+        justify-content: center;
+        align-items: center;
+        gap: 35px;
+        background-color: rgb(138, 185, 187);
+        border-radius: 10px;
+        transition: all 0.5s linear;
+    }
+
+    .nav-right .a {
+        margin: unset;
+    }
+
+    #lab {
+        display: block;
+    }
+
+    .img-cont-icons {
+        gap: 30px;
+        height: 50%;
+
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .ficon {
+        width: 100%;
+    }
+
+    .heartcont span {
+        letter-spacing: 0.8px;
+        font-size: 20px;
+        margin-top: 5px;
+    }
+
+    .imgcont h1 {
+        margin-bottom: 40px;
+    }
+
+    .btns {
+        margin-top: 15px;
+    }
+
+}
+
+/* ================== welcome section ==================== */
+
+.welcome {
+    height: 550px;
+    width: 100%;
+    padding: 0px 0px 0px 150px;
+    display: flex;
+    gap: 90px;
+    justify-content: center;
+    align-items: center;
+}
+
+.welcome .welcont {
+    width: 50%;
+}
+
+.welcome .welimg {
+    width: 50%;
+}
+
+.doct {
+    width: 50%;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(33, 33, 163);
+    margin: 0px 0px 0px 50px;
+    border-radius: 13% 13% 13% 0%;
+}
+
+.welicon {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.welicon i {
+    font-size: 25px;
+    color: rgb(33, 33, 163)
+}
+
+.doct img {
+    width: 100%;
+    height: 100%;
+}
+
+.welcont h1 {
+    font-size: 40px;
+    color: rgb(33, 33, 163);
+    margin: 0px 0px 20px 0px;
+}
+
+.welcont p {
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+    letter-spacing: 0.3px;
+    margin: 0px 0px 20px 0px;
+    text-indent: 50px;
+}
+
+.welcont ul {
+    margin: 0px 0px 0px 40px;
+    text-indent: 5px;
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+    letter-spacing: 0.3px;
+}
+
+.cl {
+    height: 100px;
+    width: 100px;
+    margin: -90px 0px 0px 25px;
+    position: relative;
+    z-index: -1;
+    background-color: rgb(173, 235, 173);
+}
+
+.cl div {
+    width: 90%;
+    height: 85%;
+    background-color: white;
+    margin: 15px 0px 0px 15px;
+}
+
+.tl {
+    height: 100px;
+    width: 100px;
+    top: 111%;
+    right: 15%;
+    position: absolute;
+    z-index: -1;
+    background-color: rgb(173, 235, 173);
+    border-radius: 0% 40% 0% 0%;
+}
+
+.tl div {
+    width: 90%;
+    height: 90%;
+    border-radius: 0% 30% 0% 0%;
+    background-color: white;
+    margin: 12px 0px 0px -3px;
+}
+
+/* ====================== treatments ==================== */
+
+.treat {
+    height: 450px;
+    padding: 30px;
+    text-align: center;
+}
+
+.treat h1 {
+    font-size: 35px;
+    color: rgb(33, 33, 163);
+    letter-spacing: 1px;
+}
+
+.treat .offer {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 0px 35px 0px;
+}
+
+.offer .offer-card {
+    height: 220px;
+    border-radius: 30px;
+    width: 170px;
+    color: white;
+    text-align: center;
+    overflow-y: hidden;
+    transition: transform 0.3s ease;
+    background-color: blue;
+    position: relative;
+}
+
+.offer-card:hover {
+    transform: translateY(-5px);
+    cursor: pointer;
+}
+
+
+.offer-card::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -100%;
+    width: 100%;
+    height: 50%;
+    background: linear-gradient(to bottom, rgba(26, 29, 206, 0.5), rgb(161, 207, 223));
+    transition: bottom 1s ease;
+    border: none;
+    z-index: 1;
+}
+
+.offer-card:hover::after {
+    bottom: 0;
+}
+
+.offer-card div {
+    position: relative;
+    z-index: 2;
+}
+
+.offer div i {
+    font-size: 80px;
+    margin: 40px 0px 47px 0px;
+}
+
+.treat button {
+    border: none;
+    background-color: blue;
+    color: white;
+    height: 60px;
+    font-size: 18px;
+    padding: 20px 30px;
+    letter-spacing: 0.7px;
+    width: 18%;
+    border-radius: 50% 0% 50% 0%;
+}
+
+/* ================ services ==================*/
+.services-top h2 {
+    color: #014e89;
+    margin-top: 30px;
+}
+
+.services {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin: 30px;
+}
+
+.service-box {
+    background-color: #fff;
+    border: 2px solid #cfd8dc;
+    border-radius: 12px;
+    padding: 20px;
+    width: 180px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.service-box i {
+    font-size: 40px;
+    color: white;
+    background: linear-gradient(to top right, blue, black);
+    padding: 20px 40px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.service-box p {
+    font-weight: bold;
+    color: #333;
+}
+
+/* ============== Departments ================ */
+.departments h2,
+.services-top h2 {
+    font-size: 35px;
+    color: rgb(33, 33, 163);
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+.departments-container {
+    overflow: hidden;
+    margin: 40px 0;
+}
+
+.departments-scroll {
+    display: flex;
+    gap: 20px;
+    animation: scrollLeft 25s linear infinite;
+    white-space: nowrap;
+}
+
+.department {
+    background-color: #014e89;
+    color: white;
+    padding: 10px 25px;
+    border-radius: 20px;
+    font-weight: bold;
+    display: inline-block;
+}
+
+@keyframes scrollLeft {
+    0% {
+        transform: translateX(50%);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+
+
+/* ============= Doctor Directory ============== */
+
+.container1 {
+    max-width: 80%;
+    margin: auto;
+    padding: 40px 20px;
+    background-color: #fff;
+}
+
+.title {
+    text-align: center;
+    font-size: 32px;
+    color: rgb(33, 33, 163);
+    margin-bottom: 40px;
+}
+
+.doctor-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.doctor-card {
+    background-color: #fff;
+    border: 2px solid #e0e0e0;
+    border-radius: 20px;
+    overflow: hidden;
+    border: 2px solid blue;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.doctor-card:hover {
+    transform: translateY(-5px);
+    cursor: pointer;
+}
+
+.doctor-image {
+    position: relative;
+}
+
+.doctor-image img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.available {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: #d4f5e9;
+    color: #2e7d32;
+    font-size: 12px;
+    padding: 5px 10px;
+    border-radius: 15px;
+    font-weight: bold;
+}
+
+.doctor-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+}
+
+.doctor-name {
+    font-weight: bold;
+    font-size: 18px;
+    color: #333;
+}
+
+.arrow-circle {
+    width: 30px;
+    height: 30px;
+    background-color: #e0f0ff;
+    color: #007bff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    cursor: pointer;
+    border: 2px solid blue;
+}
+
+/* ================ Bed Availables =================== */
+.bed-container h2,
+.opd-section h2,
+.customer-reviews h2 {
+    font-size: 35px;
+    color: rgb(33, 33, 163);
+    letter-spacing: 1px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.bed-section {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-bottom: 50px;
+}
+
+.bed-card {
+    background-color: white;
+    border: 2px solid #d3e5f7;
+    border-radius: 15px;
+    width: 250px;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+    position: relative;
+    overflow: hidden;
+}
+
+.bed-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+    border-color: #014e89;
+    cursor: pointer;
+}
+
+.bed-card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.bed-info {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #014e89;
+    padding: 3px 5px;
+}
+
+.bed-type {
+    background-color: #014e89;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 20px;
+    display: inline-block;
+    margin-top: 8px;
+}
+
+.arrow {
+    position: absolute;
+    right: 15px;
+    bottom: 15px;
+    background: #014e89;
+    color: white;
+    border-radius: 50%;
+    padding: 8px;
+    transition: background 0.3s;
+}
+
+.arrow:hover {
+    background: #012f5d;
+    cursor: pointer;
+}
+
+/* ============== General OPD hours =================== */
+
+.opd-section {
+    margin: 30px 0px 50px 0px;
+}
+
+
+.opd-details {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+    color: #014e89;
+    font-size: 16px;
+}
+
+.opd-details div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    font-size: 20px;
+}
+
+.opd-details i {
+    font-size: 25px;
+}
+
+/* ===================== Reviews ========================= */
+.reviews {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.review-card {
+    background: white;
+    border: 2px solid #007bff;
+    border-radius: 15px;
+    width: 280px;
+    text-align: center;
+    padding: 15px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.review-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+.review-card img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.review-text {
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.review-author {
+    font-weight: bold;
+    font-size: 14px;
+    color: #1f3b77;
+    margin-bottom: 15px;
+}
+
+.stars {
+    display: inline-block;
+    border: 2px solid #007bff;
+    border-radius: 30px;
+    padding: 8px 14px;
+}
+
+.stars i {
+    color: #fbb034;
+    font-size: 18px;
+    margin: 0 2px;
+    transition: transform 0.2s;
+}
+
+.review-card:hover .stars i {
+    transform: scale(1.2);
+}
+
+
+/*===================== Footer Styles ====================*/
+.footer {
+    background-color: #014e89;
+    color: white;
+    padding: 40px 20px;
+    margin-top: 40px;
+    width: 100%;
+    overflow-x: hidden;
+    letter-spacing: 1px;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 25px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.footer-section h4 {
+    margin-bottom: 15px;
+}
+
+.footer-section p,
+.footer-section li {
+    font-size: 14px;
+    margin: 10px 0;
+    list-style: none;
+}
+
+.footer-section p:hover,
+.footer-section li:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.logo-circle {
+    width: 130px;
+    height: 100px;
+    background-color: #f3f5f8;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 13px;
+    color: #ccc;
+}
+
+
+
+
+
+/* ========================= responsive =============================== */
+
+@media only screen and (min-width:800px) and (max-width:1100px) {
+    #lab {
+        display: block;
+    }
+
+    .nav-right {
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        z-index: 999;
+        top: 70px;
+        left: 100%;
+        height: 300px;
+        width: 250px;
+        justify-content: center;
+        align-items: center;
+        gap: 35px;
+        background-color: rgb(138, 185, 187);
+        border-radius: 10px;
+        transition: all 0.5s linear;
+    }
+
+    .nav-right .a {
+        margin: unset;
+    }
+
+    .imgconts .fdiv {
+        margin: 60px 0px 0px 30px;
+    }
+
+    .btns {
+        margin-top: 15px;
+    }
+}

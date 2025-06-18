@@ -1,0 +1,526 @@
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+.logo {
+    width: 200px;
+    height: 35px;
+    margin-left: -50px;
+
+}
+
+.navbar {
+    width: 100%;
+    background-color: white;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.nav-right .a {
+    margin: 0px 20px 0px 0px;
+    font-size: 18px;
+    letter-spacing: 1.5px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    border: none;
+    padding: 8px 20px;
+    text-align: center;
+    font-size: 18px;
+    border-radius: 10px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    letter-spacing: 1px;
+}
+
+.nav-btn {
+    border: none;
+    border-radius: 18px;
+    padding: 10px;
+    letter-spacing: 1px;
+    font-size: 15px;
+    background-color: rgb(51, 51, 233);
+    color: white;
+    transition: all 0.5s ease;
+}
+
+/* -------------------------- Image contents -------------------------------- */
+.imgcont {
+    height: 85vh;
+    overflow-x: hidden;
+    color: white;
+    display: flex;
+    position: relative;
+}
+
+/* https://www.figma.com/design/bgbn8Wl0gsU9h3TPaNopJ9/Sri-Veda-Multispecialty-Hospital-webpage-design?node-id=0-1&t=AdbuauAedbV7260s-1  */
+
+.imgcont h1 {
+    font-size: 60px;
+    width: 10%;
+    letter-spacing: 1.5px;
+    margin: 0px 0px 30px 0px;
+}
+
+.imgcont .firstimg {
+    filter: brightness(45%);
+    width: 100%;
+}
+
+.imgconts {
+    position: absolute;
+    display: flex;
+    width: 100%;
+    letter-spacing: 0.7px;
+    font-family: serif;
+    height: 100%;
+}
+
+.imgconts .fdiv {
+    width: 60%;
+    margin: 60px 0px 0px 100px;
+}
+
+.imgconts img {
+    width: 30%;
+    margin: 60px 40px 0px 0px;
+    height: 400px;
+}
+
+.ficon {
+    width: 25%;
+    text-align: center;
+}
+
+.ficon .heart {
+    font-size: 20px;
+    background-color: green;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    padding: 12px;
+    margin-bottom: 5px;
+}
+
+.heartcont {
+    display: flex;
+    justify-content: center;
+    font-size: 15px;
+}
+
+.fa-circle {
+    font-size: 5px;
+    margin: 7px 7px 0px 10px;
+}
+
+.img-cont-icons {
+    display: flex;
+}
+
+/*  ---------------- image content buttons ---------------- */
+
+.btn {
+    border: none;
+    border-radius: 15px;
+    padding: 8px 10px;
+    box-shadow: 1px 1px 10px black;
+    margin: 40px 0px 0px 20px;
+    background-color: aliceblue;
+    color: black;
+    font-size: 17px;
+    letter-spacing: 0.7px;
+}
+
+.btn1 {
+    background-color: green;
+    color: white;
+}
+
+/* ============== Hover Efforts =============== */
+
+.a:hover {
+    color: white;
+    background-color: blue;
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+.nav-btn:hover {
+    cursor: pointer;
+    transform: scaleX(1.1);
+}
+
+
+
+.btn1:hover,
+.btn2:hover {
+    background-color: rgb(0, 13, 128);
+    color: white;
+    cursor: pointer;
+}
+
+#lab {
+    display: none;
+}
+
+#lab i {
+    padding: 0px 5px 0px 0px;
+    font-size: 30px;
+}
+
+
+.active {
+    background-color: black;
+    color: white;
+}
+
+
+
+/* ================= Responsive ================== */
+
+@media only screen and (min-width:300px) and (max-width:800px) {
+    .imgcont h1 {
+        font-size: 30px;
+        width: unset;
+    }
+
+    .imgconts .fdiv {
+        width: 100%;
+        height: 100%;
+        padding: 50px 0px 0px 0px;
+        margin: 0px 0px 0px 0px;
+        text-align: center;
+    }
+
+    .imgconts img {
+        width: unset;
+        height: unset;
+        position: fixed;
+        opacity: 0;
+    }
+
+    .nav-right {
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        z-index: 999;
+        top: 70px;
+        left: 100%;
+        height: 300px;
+        width: 250px;
+        justify-content: center;
+        align-items: center;
+        gap: 35px;
+        background-color: rgb(138, 185, 187);
+        border-radius: 10px;
+        transition: all 0.5s linear;
+    }
+
+    .nav-right .a {
+        margin: unset;
+    }
+
+    #lab {
+        display: block;
+    }
+
+    .img-cont-icons {
+        gap: 30px;
+        height: 50%;
+
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .ficon {
+        width: 100%;
+    }
+
+    .heartcont span {
+        letter-spacing: 0.8px;
+        font-size: 20px;
+        margin-top: 5px;
+    }
+
+    .imgcont h1 {
+        margin-bottom: 40px;
+    }
+
+    .btns {
+        margin-top: 15px;
+    }
+
+}
+
+/* =================== treatments ====================== */
+
+.treat {
+    min-height: 450px;
+    padding: 20px;
+    max-width: 80%;
+    margin: auto;
+    text-align: center;
+}
+
+.treat h1 {
+    font-size: 35px;
+    color: rgb(33, 33, 163);
+    letter-spacing: 1px;
+}
+
+.treat .offer {
+    display: grid;
+    margin: 40px 0px;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px 0px;
+
+}
+
+.offer .offer-card {
+    height: 220px;
+    border-radius: 30px;
+    width: 170px;
+    color: white;
+    text-align: center;
+    transition: transform 0.3s ease;
+    background-color: blue;
+}
+
+.offer-card:hover {
+    transform: translateY(-5px);
+    cursor: pointer;
+}
+
+.offer div i {
+    font-size: 80px;
+    margin: 40px 0px 47px 0px;
+}
+
+.treat button {
+    border: none;
+    background-color: blue;
+    color: white;
+    height: 60px;
+    font-size: 18px;
+    letter-spacing: 0.7px;
+    width: 12%;
+    border-radius: 40% 0% 40% 0%;
+}
+
+/* ====================== Resposive ======================== */
+
+@media (max-width: 768px) {
+    .treat .offer {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .doctor-grid {
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+}
+
+@media (max-width: 480px) {
+    .treat .offer {
+        grid-template-columns: 1fr;
+    }
+
+    .doctor-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+/* ============= Doctor Directory ============== */
+
+.container1 {
+    max-width: 80%;
+    margin: auto;
+    padding: 40px 20px;
+    background-color: #fff;
+}
+
+.title {
+    text-align: center;
+    font-size: 32px;
+    color: rgb(33, 33, 163);
+    margin-bottom: 40px;
+}
+
+.doctor-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.doctor-card {
+    background-color: #fff;
+    border: 2px solid #e0e0e0;
+    border-radius: 20px;
+    overflow: hidden;
+    border: 2px solid blue;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.doctor-card:hover {
+    transform: translateY(-5px);
+    cursor: pointer;
+}
+
+.doctor-image {
+    position: relative;
+}
+
+.doctor-image img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.available {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: #d4f5e9;
+    color: #2e7d32;
+    font-size: 12px;
+    padding: 5px 10px;
+    border-radius: 15px;
+    font-weight: bold;
+}
+
+.doctor-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+}
+
+.doctor-name {
+    font-weight: bold;
+    font-size: 18px;
+    color: #333;
+}
+
+.arrow-circle {
+    width: 30px;
+    height: 30px;
+    background-color: #e0f0ff;
+    color: #007bff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    cursor: pointer;
+    border: 2px solid blue;
+}
+
+
+
+/*===================== Footer Styles ====================*/
+.footer {
+    background-color: #014e89;
+    color: white;
+    padding: 40px 20px;
+    margin-top: 40px;
+    width: 100%;
+    overflow-x: hidden;
+    letter-spacing: 1px;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 25px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.footer-section h4 {
+    margin-bottom: 15px;
+}
+
+.footer-section p,
+.footer-section li {
+    font-size: 14px;
+    margin: 10px 0;
+    list-style: none;
+}
+
+.footer-section p:hover,
+.footer-section li:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.logo-circle {
+    width: 130px;
+    height: 100px;
+    background-color: #f3f5f8;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 13px;
+    color: #ccc;
+}
+
+
+
+
+
+/* ========================= responsive =============================== */
+
+@media only screen and (min-width:800px) and (max-width:1100px) {
+    #lab {
+        display: block;
+    }
+
+    .nav-right {
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        z-index: 999;
+        top: 70px;
+        left: 100%;
+        height: 300px;
+        width: 250px;
+        justify-content: center;
+        align-items: center;
+        gap: 35px;
+        background-color: rgb(138, 185, 187);
+        border-radius: 10px;
+        transition: all 0.5s linear;
+    }
+
+    .nav-right .a {
+        margin: unset;
+    }
+
+    .imgconts .fdiv {
+        margin: 60px 0px 0px 30px;
+    }
+
+    .btns {
+        margin-top: 15px;
+    }
+}

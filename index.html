@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> DD - Hospital </title>
+
+    <!--  Icons link   -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!--  stylesheet link(css file)  -->
+
+    <link rel="stylesheet" type="text/css" href="./index.css" />
+</head>
+
+<body>
+    <div class="container">
+        <!-- ---------------  navbar ------------------ -->
+        <nav class="navbar">
+            <img class="logo" src="images/logo3.png" alt="">
+            <label id="lab">
+                <i class="fa-solid fa-bars" id="labs" onclick="startbtn()"></i>
+            </label>
+            <div class="nav-right" id="clicks" onclick=" stopbtn()">
+                <button class="a hii" onclick="sample(id)" id="a1"> Home </button>
+                <button class="a hii" onclick="sample(id)" id="a2"> Treatments & Doctors </button>
+                <button class="a hii" onclick="sample(id)" id="a3"> Book Appointment </button>
+                <button class="nav-btn hii" onclick="sample(id)" id="a4"> Contact </button>
+            </div>
+        </nav>
+
+        <!-- --------------  navbar-next ----------- -->
+
+        <div class="imgcont">
+            <img class="firstimg" src="images/first page img.png" alt="....">
+            <div class="imgconts">
+                <div class="fdiv">
+                    <h1>Your Health, Our Priroty</h1>
+                    <!-- heart div -->
+                    <div class="img-cont-icons">
+                        <div class="ficon">
+                            <i class="fa-solid fa-hand-holding-heart heart"></i>
+                            <div class="heartcont">
+                                <i class="fa-solid fa-circle"></i>
+                                <span>Compasionate care</span>
+                            </div>
+                        </div>
+                        <!-- 24/7 div -->
+                        <div class="ficon">
+                            <i class="fa-solid fa-stethoscope heart"></i>
+                            <div class="heartcont">
+                                <i class="fa-solid fa-circle"></i>
+                                <span>24/7 Emargency Service</span>
+                            </div>
+                        </div>
+                        <!-- trusted doctors div -->
+                        <div class="ficon">
+                            <i class="fa-solid fa-hands-holding-child heart"></i>
+                            <div class="heartcont">
+                                <i class="fa-solid fa-circle"></i>
+                                <span>Trusted Doctors</span>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="btns">
+                        <button class="btn btn1"> Book Appointment </button>
+                        <button class="btn btn2"> View Treatments </button>
+                    </div>
+                </div>
+                <img src="images/rightside.png" alt="">
+            </div>
+        </div>
+
+        <!--      welcome        -->
+
+        <div class="welcome">
+
+            <!-- left side -->
+
+            <div class="welcont">
+                <h1>Welcome to Sri Veda Multispecialty Hospital</h1>
+                <p> We are a trusted name in healthcare, delivering world-class treatment with a human touch. Our
+                    experienced medical team, advanced technology, and ethical approach ensure every patient receives
+                    the care they deserve.
+                </p>
+                <div class="welicon">
+                    <i class="fa-solid fa-user-nurse"></i>
+                    <h3>Our Vision:</h3>
+                </div>
+                <p>To be the most compassionate and accessible center of healing in the region.</p>
+                <div class="welicon">
+                    <i class="fa-solid fa-bullseye"></i>
+                    <h3>Our Mission:</h3>
+                </div>
+                <ul>
+                    <li>To provide high-quality medical services to all</li>
+                    <li>To make healthcare affordable and inclusive</li>
+                    <li>To empower communities with preventive care</li>
+                </ul>
+            </div>
+
+            <!-- right side -->
+
+            <div class="welimg">
+                <div class="doct">
+                    <img src="images/next.png" alt="">
+                </div>
+                <div class="cl">
+                    <div></div>
+                </div>
+                <div class="tl">
+                    <div></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- treatments -->
+
+        <div class="treat">
+            <h1>Treatments We Offer</h1>
+            <div class="offer">
+                <div class="offer-card">
+                    <div>
+                        <i class="fa-solid fa-baby"></i>
+                        <h4>Padiatrics</h4>
+                    </div>
+
+                </div>
+                <div class="offer-card">
+                    <div>
+                        <i class="fa-solid fa-brain"></i>
+                        <h4>Neurology</h4>
+                    </div>
+                </div>
+                <div class="offer-card">
+                    <div>
+                        <i class="fa-solid fa-bone"></i>
+                        <h4>Orthopaedics</h4>
+                    </div>
+                </div>
+                <div class="offer-card">
+                    <div>
+                        <i class="fa-solid fa-heart"></i>
+                        <h4>Cardiology</h4>
+                    </div>
+                </div>
+            </div>
+            <button> View all Treatments </button>
+        </div>
+
+        <!-- Services -->
+        <div class="services-top">
+            <h2>Services We Offer</h2>
+            <div class="services">
+                <div class="service-box">
+                    <i class="fa-solid fa-truck-medical"></i>
+                    <p>24/7 Ambulance Service</p>
+                </div>
+                <div class="service-box">
+                    <i class="fa-solid fa-person-walking-with-cane"></i>
+                    <p>Senior Citizen Discounts</p>
+                </div>
+                <div class="service-box">
+                    <i class="fa-solid fa-heart-circle-plus"></i>
+                    <p>Insurance Assistance</p>
+                </div>
+                <div class="service-box">
+                    <i class="fa-solid fa-house-chimney-medical"></i>
+                    <p>In-House Pharmacy</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Departments -->
+        <div class="departments">
+            <h2>Departments</h2>
+            <div class=" departments-container">
+                <div class="departments-scroll">
+                    <div class="department">Emergency Unit</div>
+                    <div class="department">Surgical Ward</div>
+                    <div class="department">Radiology & Imaging</div>
+                    <div class="department">Maternity & Child Care</div>
+                    <div class="department">General OPD</div>
+                    <div class="department">ICU</div>
+                    <div class="department">Cardiology</div>
+                    <div class="department">Neurology</div>
+                    <div class="department">Orthopedics</div>
+                    <div class="department">Dental Care</div>
+                    <!-- Repeat if you want smoother scrolling -->
+                    <div class="department">Emergency Unit</div>
+                    <div class="department">Surgical Ward</div>
+                    <div class="department">Radiology & Imaging</div>
+                    <div class="department">Maternity & Child Care</div>
+                    <div class="department">General OPD</div>
+                    <div class="department">ICU</div>
+                    <div class="department">Cardiology</div>
+                    <div class="department">Neurology</div>
+                    <div class="department">Orthopedics</div>
+                    <div class="department">Dental Care</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- doctor director -->
+        <div class="container1">
+            <h1 class="title">Doctor Directory</h1>
+
+            <div class="doctor-grid">
+                <!-- card-1 -->
+                <div class="doctor-card">
+                    <div class="doctor-image">
+                        <span class="available">Available</span>
+                        <img src="images/ourspl1.png" alt="Dr. James">
+                    </div>
+                    <div class="doctor-info">
+                        <span class="doctor-name">Dr. James</span>
+                        <div class="arrow-circle">&#8594;</div>
+                    </div>
+                </div>
+
+                <!-- card-2 -->
+                <div class="doctor-card">
+                    <div class="doctor-image">
+                        <span class="available">Available</span>
+                        <img src="images/ourspl3.png" alt="Dr. Jake">
+                    </div>
+                    <div class="doctor-info">
+                        <span class="doctor-name">Dr. Olivia</span>
+                        <div class="arrow-circle">&#8594;</div>
+                    </div>
+                </div>
+                <!-- card-3 -->
+                <div class="doctor-card">
+                    <div class="doctor-image">
+                        <span class="available">Available</span>
+                        <img src="images/ourspl2.png" alt="Dr. Olivia">
+                    </div>
+                    <div class="doctor-info">
+                        <span class="doctor-name">Dr. Jake</span>
+                        <div class="arrow-circle">&#8594;</div>
+                    </div>
+                </div>
+                <!-- card-4 -->
+                <div class="doctor-card">
+                    <div class="doctor-image">
+                        <span class="available">Available</span>
+                        <img src="images/ourspl3.png" alt="Dr. Jake">
+                    </div>
+                    <div class="doctor-info">
+                        <span class="doctor-name">Dr. Olivia</span>
+                        <div class="arrow-circle">&#8594;</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bed Availablity -->
+        <div class="bed-container">
+            <h2>Bed Availability</h2>
+
+            <div class="bed-section">
+                <!-- ICU Bed Card -->
+                <div class="bed-card">
+                    <img src="images/bed1.png" alt="ICU Beds">
+                    <div class="bed-info">6 Available Beds</div>
+                    <div class="bed-type">ICU Beds</div>
+                    <div class="arrow"><i class="fas fa-arrow-right"></i></div>
+                </div>
+
+                <!-- General Bed Card -->
+                <div class="bed-card">
+                    <img src="images/bed2.png" alt="General Beds">
+                    <div class="bed-info">12 Available Beds</div>
+                    <div class="bed-type">General Beds</div>
+                    <div class="arrow"><i class="fas fa-arrow-right"></i></div>
+                </div>
+            </div>
+
+            <div class="opd-section">
+                <h2>General OPD Hours</h2>
+                <div class="opd-details">
+                    <div><i class="far fa-clock"></i> <b>Monday–Saturday: 9 AM – 6 PM</b></div>
+                    <div><i class="fas fa-procedures"></i> <b>Emergency Services: 24/7</b></div>
+                    <div><i class="fas fa-phone"></i> <b>Emergency Contact: ‪+91-98765 43210‬</b></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Reviews -->
+        <div class="customer-reviews">
+            <h2>Patient Reviews</h2>
+
+            <div class="reviews">
+                <div class="review-card">
+                    <img src="./images/patientreview.png" alt="Patient">
+                    <div class="review-text">"Affordable and advanced treatment. Thankful for the free health camp."
+                    </div>
+                    <div class="review-author">— M. Arun, Villupuram</div>
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                </div>
+
+                <div class="review-card">
+                    <img src="images/patientreview.png" alt="Patient">
+                    <div class="review-text">"Affordable and advanced treatment. Thankful for the free health camp."
+                    </div>
+                    <div class="review-author">— D. John, Chennai</div>
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                </div>
+
+                <div class="review-card">
+                    <img src="images/patientreview.png" alt="Patient">
+                    <div class="review-text">"Affordable and advanced treatment. Thankful for the free health camp."
+                    </div>
+                    <div class="review-author">— S. Sree, Bangalore</div>
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <img src="images/logo3.png" class="logo-circle" />
+                    <p>Healing with compassion, excellence, and commitment</p>
+                </div>
+
+                <div class="footer-section links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li>Home</li>
+                        <li>Appointments</li>
+                        <li>Contact</li>
+                    </ul>
+                </div>
+
+                <div class="footer-section contact">
+                    <h4>Contact</h4>
+                    <p><i class="fas fa-location-dot"></i> 123 Health Road, Chennai, TN – 600001</p>
+                    <p><i class="fas fa-envelope"></i> contact@srivedahospital.com</p>
+                    <p><i class="fas fa-phone"></i> ‪+91-98765 43210‬</p>
+                </div>
+
+                <div class="footer-section social">
+                    <h4>Follow Us:</h4>
+                    <p><i class="fab fa-twitter"></i> @SriVedaHospital</p>
+                    <p><i class="fab fa-instagram"></i> @SriVeda_Hospital</p>
+                    <p><i class="fab fa-facebook"></i> @SriVedaHosp</p>
+                    <p><i class="fab fa-linkedin"></i> linkedin.com/company/SriVedaHospital</p>
+                </div>
+            </div>
+            <p class="footer-bottom">© 2025 Sri Veda Multispecialty Hospital. All Rights Reserved.</p>
+        </footer>
+
+
+    </div>
+
+
+    <script src="./index.js"></script>
+</body>
+
+</html>

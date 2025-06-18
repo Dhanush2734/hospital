@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> DD - Hospital(Appointment) </title>
+
+    <!--  Icons link   -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!--  stylesheet link(css file)  -->
+
+    <link rel="stylesheet" type="text/css" href="./book.css" />
+</head>
+
+<body>
+    <div class="container">
+        <!-- ---------------  navbar ------------------ -->
+        <nav class="navbar">
+            <img class="logo" src="images/logo3.png" alt="">
+            <label id="lab">
+                <i class="fa-solid fa-bars" id="labs" onclick="startbtn()"></i>
+            </label>
+            <div class="nav-right" id="clicks" onclick=" stopbtn()">
+                <button class="a hii" onclick="sample(id)" id="a1"> Home </button>
+                <button class="a hii" onclick="sample(id)" id="a2"> Treatments & Doctors </button>
+                <button class="a hii" onclick="sample(id)" id="a3"> Book Appointment </button>
+                <button class="nav-btn hii" onclick="sample(id)" id="a4"> Contact </button>
+            </div>
+        </nav>
+
+        <!-- --------------  navbar-next ----------- -->
+
+        <div class="hero-section">
+            <div class="hero-img">
+                <img src="images/appoinment.png" alt="Doctor">
+            </div>
+            <div class="hero-text">
+                <h1>Don't Let Your Health <br> Take a Backseat!</h1>
+                   
+            </div>
+        </div>
+
+        <!-- for appoinment and contact info -->
+        <div class="container2">
+            <!-- Appointment Form -->
+            <div class="form-section">
+                <h2>For Appointment</h2>
+                <form>
+                    <div class="form-group">
+                        <div class="form-control">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" placeholder="Enter your name" required>
+                        </div>
+                        <div class="form-control">
+                            <label for="phone">Phone Number</label>
+                            <input type="text" id="phone" placeholder="Enter your phone" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="form-control">
+                            <label for="record">Medical Record Number</label>
+                            <input type="text" id="record" placeholder="Enter record number" required>
+                        </div>
+                        <div class="form-control">
+                            <label for="dept">Department</label>
+                            <input type="text" id="dept" placeholder="Enter department" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="form-control">
+                            <label for="date">Preferred Date</label>
+                            <input type="date" id="date" required>
+                        </div>
+                        <div class="form-control">
+                            <label for="time">Preferred Time</label>
+                            <input type="time" id="time" required>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="btnss">Submit ➤</button>
+                </form>
+            </div>
+
+            <!-- Contact Info -->
+            <div class="contact-section">
+                <h2>Contact Info</h2>
+                <img src="./images/contact-info.png" alt="Contact Image" />
+                <p><strong>Phone:</strong>+91-98765-43210</p>
+                <p><strong>Email Us:</strong> contact@ddhospital.com</p>
+                <p><strong>Our Location:</strong> 123 Health Road, Chennai, TN - 600001</p>
+            </div>
+        </div>
+
+
+
+
+
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <img src="images/logo3.png" class="logo-circle" />
+                    <p>Healing with compassion, excellence, and commitment</p>
+                </div>
+
+                <div class="footer-section links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li>Home</li>
+                        <li>Appointments</li>
+                        <li>Contact</li>
+                    </ul>
+                </div>
+
+                <div class="footer-section contact">
+                    <h4>Contact</h4>
+                    <p><i class="fas fa-location-dot"></i> 123 Health Road, Chennai, TN – 600001</p>
+                    <p><i class="fas fa-envelope"></i> contact@srivedahospital.com</p>
+                    <p><i class="fas fa-phone"></i> ‪+91-98765 43210‬</p>
+                </div>
+
+                <div class="footer-section social">
+                    <h4>Follow Us:</h4>
+                    <p><i class="fab fa-twitter"></i> @SriVedaHospital</p>
+                    <p><i class="fab fa-instagram"></i> @SriVeda_Hospital</p>
+                    <p><i class="fab fa-facebook"></i> @SriVedaHosp</p>
+                    <p><i class="fab fa-linkedin"></i> linkedin.com/company/SriVedaHospital</p>
+                </div>
+            </div>
+            <p class="footer-bottom">© 2025 Sri Veda Multispecialty Hospital. All Rights Reserved.</p>
+        </footer>
+
+
+    </div>
+
+
+    <script src="./index.js"></script>
+</body>
+
+</html>
